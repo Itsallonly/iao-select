@@ -1,0 +1,11 @@
+/*
+ Plugin Name: iao select
+         Key: iao-select
+     Version: 1.0.0
+      Author: Prashant Kapoor
+     Website: http://www.itsallonly.com
+        Repo: https://github.com/Itsallonly/iao-select
+      Issues: https://github.com/Itsallonly/iao-select/issues
+       Files: iao-select.jquery.js, iao-select.css
+  Dependency: Jquery
+*/iao-options-count,iao-options-list iao-option.selected{background-color:#5480ea;color:#fff}iao-option,iao-options-count,iao-options-end,iao-options-list,iao-options-start,iao-select,iao-select-box,iao-select>[name=selectInput]{display:block;width:100%;margin:0;padding:0;box-sizing:border-box;font-family:Arial;font-size:14px}iao-select-box{position:relative}iao-options-list{display:none;max-height:182px;background-color:#fff;border:1px solid #ccc;margin-top:-1px;overflow-y:auto;overflow-x:hidden;top:40px;box-shadow:0 1px 2px #ccc;position:absolute;border-bottom-left-radius:4px;border-bottom-right-radius:4px}iao-options-list iao-option{padding:7px 15px;cursor:pointer}iao-select>[name=selectInput]{height:40px;border:1px solid #ccc;padding:7px 15px}iao-options-list iao-option:hover{background-color:#e6e6e6}iao-options-count{float:right;width:auto;margin-top:-34px;padding:6px 10px;margin-right:6px;border-radius:4px}.iao-hidden,iao-options-end,select[iao-select]{display:none}
