@@ -21,7 +21,7 @@
         .attr('iao-select','')
         .addClass('select-'+timeStamp)
         .after('<iao-select-box id="iao-select-'+timeStamp+'"><iao-select><input type="text" name="selectInput" id="search-'+timeStamp+'" /><iao-options-count></iao-options-count></iao-select><iao-options-list><iao-options-start></iao-options-start><iao-options-end>No results for matching search</iao-options-end></iao-options-list></iao-select-box>');
-        function iaoSelectShowCount() {
+        function iaoSelectShowCount(count) {
             $(document).find('#iao-select-'+timeStamp+' iao-options-count').text(count);
         }
         function iaoSetInputValue(value) {
@@ -55,11 +55,11 @@
                 } else {
                     $(this).removeClass('iao-hidden');
                     count++;
-                    iaoSelectShowCount();
+                    iaoSelectShowCount(count);
                 }
             })
         })
-        iaoSelectShowCount();
+        iaoSelectShowCount(count);
         return this;
     };
 }( jQuery ));
