@@ -13,14 +13,15 @@
     $.fn.iaoSelect = function(arr) {
         var opt = $.extend( {
             placeholder: "Select Options",
-            multiselect: false
+            multiselect: false,
+            value: ""
         }, arr ),
         value, showData, count = 0,
         timeStamp = $.now();
         $(this)
         .attr('iao-select','')
         .addClass('select-'+timeStamp)
-        .after('<iao-select-box id="iao-select-'+timeStamp+'"><iao-select><input type="text" name="selectInput" id="search-'+timeStamp+'" /><iao-options-count></iao-options-count></iao-select><iao-options-list><iao-options-start></iao-options-start><iao-options-end>No results for matching search</iao-options-end></iao-options-list></iao-select-box>');
+        .after('<iao-select-box id="iao-select-'+timeStamp+'"><iao-select><input type="text" name="selectInput" id="search-'+timeStamp+'" placeholder="'+opt.placeholder+'"/><iao-options-count></iao-options-count></iao-select><iao-options-list><iao-options-start></iao-options-start><iao-options-end>No results for matching search</iao-options-end></iao-options-list></iao-select-box>');
         function iaoSelectShowCount(count) {
             $(document).find('#iao-select-'+timeStamp+' iao-options-count').text(count);
         }
